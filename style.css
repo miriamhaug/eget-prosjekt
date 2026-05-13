@@ -1,0 +1,143 @@
+.cinzel-<uniquifier> {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    max-width: min(800px, 90%);
+    margin: 0 auto;
+
+}
+
+nav {
+    background-color: aliceblue;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100; /* Sikrer at navbaren ligger over annet innhold */
+
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.nav-links {
+    list-style: none;
+    /* display: flex; */
+    gap: 1rem;
+    padding: 1rem;
+    /* 1rem = 16px */
+}
+
+.nav-links a {
+    color: rgb(119, 180, 233);
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links a:hover {
+    color: black;
+    background-color: antiquewhite;
+
+}
+
+.logo {
+
+    font-size: 2rem;
+    padding: 1rem;
+    /*  border-radius: 50%; */
+}
+
+.burger,
+.kryss {
+    display: none;
+
+}
+
+section {
+    height: 100vh;
+
+}
+
+.hero {
+    background-image: url(./bilder/fly\ som\ flyr.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1{
+    color: white;
+    z-index: 1;
+    font-size: 15rem;
+}
+
+.reise{
+    height: 100vh;
+    background-color: white;
+}
+
+.reise h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+.reise-tekst{
+    background-color: rgb(244, 182, 244);
+    display: flex;
+    text-align: center;
+
+}
+
+.reise-bilder img{
+    width: 400px;
+    border-radius: 50%;
+}
+
+.reise-bilder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
