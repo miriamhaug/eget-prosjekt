@@ -7,67 +7,76 @@
  body {
      font-family: sans-serif;
      background-color: #f5f5f5;
-     padding: 2rem;
+     
+     background-color: rgb(104, 164, 217);
  }
+
+ .container {
+    max-width: min(800px, 90%);
+    margin: 0 auto;
+
+}
+
  nav {
-    background-color: aliceblue;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    /* Sikrer at navbaren ligger over annet innhold */
-
-}
-
-nav .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+     background-color: aliceblue;
+     position: sticky;
+     top: 0;
+     width: 100%;
+     z-index: 100;
 
 
-}
+ }
 
-.nav-links {
-    list-style: none;
-    /* display: flex; */
-    gap: 1rem;
-    padding: 1rem;
-    /* 1rem = 16px */
-}
+ nav .container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
 
-.nav-links a {
-    color: rgb(119, 180, 233);
-    font-size: 1rem;
-    padding: 0.5rem;
-    border-radius: 5px;
-    transition: 0.5s;
-}
 
-.nav-links ul {
-    display: flex;
-    list-style: none;
-}
+ }
 
-.nav-links a:hover {
-    color: black;
-    background-color: antiquewhite;
+ .nav-links {
+     list-style: none;
+     /* display: flex; */
+     gap: 1rem;
+     padding: 1rem;
+     /* 1rem = 16px */
+ }
 
-}
+ .nav-links a {
+     color: rgb(119, 180, 233);
+     font-size: 1rem;
+     padding: 0.5rem;
+     border-radius: 5px;
+     transition: 0.5s;
+ }
 
-.logo {
+ .nav-links ul {
+     display: flex;
+     list-style: none;
+ }
 
-    font-size: 2rem;
-    padding: 1rem;
-    /*  border-radius: 50%; */
-}
+ .nav-links a:hover {
+     color: black;
+     background-color: antiquewhite;
 
-.burger,
-.kryss {
-    display: none;
+ }
 
-}
+ .logo {
+
+     font-size: 2rem;
+     padding: 1rem;
+
+ }
+
+ .burger,
+ .kryss {
+     display: none;
+
+ }
 
  h1 {
+    padding-top: 30px;
      text-align: center;
      margin-bottom: 1.5rem;
      font-size: 2rem;
@@ -90,9 +99,12 @@ nav .container {
      border-radius: 8px;
  }
 
- .bilde-container:first-child {
+
+
+ .bilde-container.stor {
      grid-row: span 2;
  }
+
 
  .bilde-container.bredt {
      grid-column: span 2;
@@ -127,3 +139,85 @@ nav .container {
  .bilde-container:hover .reise-tekst-hover {
      opacity: 1;
  }
+
+ #topp-knapp {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: rgb(119, 180, 233);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 999;
+}
+
+#topp-knapp.synlig {
+    opacity: 1;
+}
+
+#topp-knapp:hover {
+    background-color: rgb(80, 140, 200);
+}
+
+footer{
+    background-color: aliceblue;
+    color: black;
+
+}
+
+@media (max-width: 768px) {
+    .burger {
+        display: block;
+        font-size: 1.5rem;
+        padding: 1rem;
+        cursor: pointer;
+        color: black;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: aliceblue;
+        padding: 1rem;
+    }
+
+    .nav-links.åpen {
+        display: block;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .burger.skjult {
+        display: none !important;
+    }
+
+    .kryss.synlig {
+        display: block !important;
+        color: black;
+    }
+
+    /* Galleri – én kolonne på mobil */
+    .galleri {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 200px;
+    }
+
+    /* Fjern span på mobil så alle bilder er like store */
+    .bilde-container.stor,
+    .bilde-container.bredt {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+}

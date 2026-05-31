@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reiseblogg</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="blogg.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="logo">HelloWorld</div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="#">Reiseblogg</a></li>
+                    <li><a href="bildegalleri.html">Bildegalleri</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars burger"></i>
+            <i class="fa-solid fa-x kryss"></i>
+        </div>
+    </nav>
+
+    <section class="blogg-hero">
+        <h1>Reiseblogg</h1>
+        <p>Historier fra verden rundt</p>
+    </section>
+
+    <section class="blogg-seksjon">
+        <div class="container">
+            <div class="blogg-grid">
+
+                <div class="blogg-kort">
+                    <img src="./bilder/frankrike.jpg" alt="Frankrike">
+                    <div class="kort-innhold">
+                        <h3>Paris på 3 dager</h3>
+                        <p>Opplev Eiffeltårnet og de beste kaféene i kjærlighetens by.</p>
+                        <button class="les-mer-knapp">Les mer</button>
+                    </div>
+                </div>
+
+                <div class="blogg-kort">
+                    <img src="./bilder/indonesia.jpg" alt="Indonesia">
+                    <div class="kort-innhold">
+                        <h3>Bali – mer enn bare strender</h3>
+                        <p>Oppdag templer, rismarker og fantastisk lokal mat.</p>
+                        <button class="les-mer-knapp">Les mer</button>
+                    </div>
+                </div>
+
+                <div class="blogg-kort">
+                    <img src="./bilder/mexico.png" alt="Mexico">
+                    <div class="kort-innhold">
+                        <h3>Mexico – mat og kultur</h3>
+                        <p>Fra gatemat til aztekiske ruiner – Mexico overrasker alltid.</p>
+                        <button class="les-mer-knapp">Les mer</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="modal-bakgrunn">
+        <div id="modal">
+            <button id="lukk-modal">✕</button>
+            <h2 id="modal-tittel"></h2>
+            <p id="modal-tekst"></p>
+        </div>
+    </div>
+    <button id="topp-knapp">↑</button>
+    <script src="blogg.js"></script>
+</body>
+
+<footer>
+    <h3>Av Miriam</h3>
+</footer>
+
+</html>

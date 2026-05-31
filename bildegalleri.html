@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bildegalleri</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="bildegalleri.css">
-    <style>
-       
-    </style>
+    
 </head>
 
 <body>
@@ -19,11 +21,8 @@
             <div class="nav-links">
                 <ul>
                     <li><a href="index.html">Hjem</a></li>
-                    <li><a href="#">Destinasjoner</a></li>
-                    <li><a href="#">Reiseblogg</a></li>
-                    <li><a href="#">Reisetips</a></li>
-                    <li><a href="bildegalleri.html">Bildegalleri</a></li>
-                    <li><a href="#">Om oss</a></li>
+                    <li><a href="blogg.html">Reiseblogg</a></li>
+                    <li><a href="#">Bildegalleri</a></li>
                 </ul>
             </div>
             <i class="fa-solid fa-bars burger"></i>
@@ -34,7 +33,7 @@
     <h1>Bildegalleri</h1>
 
     <div class="galleri">
-        <div class="bilde-container">
+        <div class="bilde-container stor">
             <img src="./bilder/frankrike.jpg" alt="Frankrike">
             <div class="reise-tekst-hover">Frankrike</div>
         </div>
@@ -47,30 +46,51 @@
             <div class="reise-tekst-hover">Mexico</div>
         </div>
         <div class="bilde-container bredt">
-            <img src="./Japan.jpg" alt="Japan">
+            <img src="./bilder/Japan.jpg" alt="Japan">
             <div class="reise-tekst-hover">Japan</div>
         </div>
-        <div class="bilde-container">
-            <img src="./usa.jpg" alt="USA">
+
+        <div class="bilde-container stor">
+            <img src="./bilder/usa.jpg" alt="USA">
             <div class="reise-tekst-hover">USA</div>
         </div>
         <div class="bilde-container">
-            <img src="./norge.jpg" alt="Norge">
+            <img src="./bilder/norge.jpg" alt="Norge">
             <div class="reise-tekst-hover">Norge</div>
         </div>
         <div class="bilde-container">
-            <img src="./italia.jpg" alt="Italia">
+            <img src="./bilder/italia.jpg" alt="Italia">
             <div class="reise-tekst-hover">Italia</div>
         </div>
         <div class="bilde-container bredt">
-            <img src="./kina.jpg" alt="Kina">
+            <img src="./bilder/kina.jpg" alt="Kina">
             <div class="reise-tekst-hover">Kina</div>
+        </div>
+
+        <div class="bilde-container stor">
+            <img src="./bilder/jamaica.jpg" alt="Jamaica">
+            <div class="reise-tekst-hover">Jamaica</div>
+        </div>
+        <div class="bilde-container">
+            <img src="./bilder/polen.jpg" alt="Polen">
+            <div class="reise-tekst-hover">Polen</div>
+        </div>
+        <div class="bilde-container">
+            <img src="./bilder/india.jpg" alt="India">
+            <div class="reise-tekst-hover">India</div>
+        </div>
+        <div class="bilde-container bredt">
+            <img src="./bilder/tunisia.jpg" alt="Tunisia">
+            <div class="reise-tekst-hover">Tunisia</div>
         </div>
     </div>
 
+    <button id="topp-knapp">↑</button>
+    <script src="script.js"></script>
 </body>
 
-</html>
-</body>
+<footer>
+    <h3>Av Miriam</h3>
+</footer>
 
 </html>

@@ -8,9 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
 
     <nav>
@@ -19,20 +19,19 @@
             <div class="nav-links">
                 <ul>
                     <li><a href="#">Hjem</a></li>
-                    <li><a href="#">Destinasjoner</a></li>
-                    <li><a href="#">Reiseblogg</a></li>
-                    <li><a href="#">Reisetips</a></li>
+                    <li><a href="blogg.html">Reiseblogg</a></li>
                     <li><a href="bildegalleri.html">Bildegalleri</a></li>
-                    <li><a href="#">Om oss</a></li>
                 </ul>
             </div>
-            <i class="fa-solid fa-bars burger"></i>
-            <i class="fa-solid fa-x kryss"></i>
+            <i class="fa-solid fa-bars burger" style="color: black;"></i>
+            <i class="fa-solid fa-x kryss" style="color: black;"></i>
         </div>
     </nav>
     <section class="hero">
         <h1>HelloWorld</h1>
     </section>
+
+
 
     <section class="reise">
         <div class="container">
@@ -65,7 +64,7 @@
                         av verdens største byer og har mange historiske bygninger og museer. Mexico er også kjent for
                         matretter som taco, burrito og guacamole, som er populære over hele verden.</div>
                 </div>
-                
+
 
             </div>
 
@@ -73,16 +72,56 @@
 
         </div>
     </section>
-    <section>
 
+   
+    <section class="anmeldelser">
+        <div class="container">
+            <h2>Hva sier våre reisende?</h2>
+            <div class="anmeldelse-grid">
+                <div class="anmeldelse-kort">
+                    <p>"En fantastisk opplevelse! Tipsene på denne siden hjalp meg med å planlegge den perfekte turen
+                        til Japan."</p>
+                    <div class="stjerner">★★★★★</div>
+                    <span class="navn">— Sofia, Oslo</span>
+                </div>
+                <div class="anmeldelse-kort">
+                    <p>"Utrolig inspirerende side. Jeg hadde aldri tenkt på å reise til Indonesia før jeg leste om det
+                        her!"</p>
+                    <div class="stjerner">★★★★★</div>
+                    <span class="navn">— Magnus, Bergen</span>
+                </div>
+                <div class="anmeldelse-kort">
+                    <p>"Veldig nyttige reisetips og vakre bilder. Har allerede booket tur til Frankrike!"</p>
+                    <div class="stjerner">★★★★☆</div>
+                    <span class="navn">— Ingrid, Trondheim</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="nyhetsbrev">
+        <div class="container">
+            <h2>Få reisetips rett i innboksen</h2>
+            <p>Meld deg på nyhetsbrevet vårt og få ukentlige tips, inspirasjon og eksklusive tilbud.</p>
+            <div class="nyhetsbrev-form">
+                <input type="email" placeholder="Din e-postadresse" id="epost-input">
+                <button id="meld-på-knapp">Meld meg på</button>
+            </div>
+            <p id="bekreftelse-melding"></p>
+        </div>
     </section>
 
 
 
-    <script>
 
-    </script>
+
+    <button id="topp-knapp">↑</button>
+    <script src="script.js"></script>
 
 </body>
 
+<footer>
+    <h3>Av Miriam</h3>
+</footer>
 </html>
