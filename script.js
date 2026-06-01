@@ -16,7 +16,7 @@ kryss.addEventListener("click", () => {
 
 const toppKnapp = document.getElementById("topp-knapp");
 
-// Vis knappen når brukeren har scrollet 300px ned
+
 window.addEventListener("scroll", () => {
     if (window.scrollY > 300) {
         toppKnapp.classList.add("synlig");
@@ -25,7 +25,7 @@ window.addEventListener("scroll", () => {
     }
 });
 
-// Scroll til toppen når knappen klikkes
+
 toppKnapp.addEventListener("click", () => {
     window.scrollTo({
         top: 0,
@@ -56,10 +56,4 @@ toppKnapp.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-/* const burger = document.querySelector(".burger");
-const navLinks = document.querySelector(".nav-links");
 
-burger.addEventListener("click", () => {
-    navLinks.classList.toggle("åpen");
-});
- */

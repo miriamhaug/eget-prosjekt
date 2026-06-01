@@ -181,7 +181,7 @@ section {
     position: absolute;
 
     bottom: 0;
-    /* Plasserer teksten under bildet */
+    
     left: 0;
     background: rgba(244, 182, 244, 0.7);
     color: white;
@@ -304,16 +304,23 @@ footer{
 
 }
 
-
-/* Nettbrett (maks 768px) */
 @media (max-width: 768px) {
-
-    /* Navbar – vis hamburger-meny */
+    
     .burger {
-        display: block;
+        display: block !important;
         font-size: 1.5rem;
         padding: 1rem;
         cursor: pointer;
+        color: black;
+    }
+
+    .burger.skjult {
+        display: none !important;
+    }
+
+    .kryss.synlig {
+        display: block !important;
+        color: black;
     }
 
     .nav-links {
@@ -335,15 +342,16 @@ footer{
         gap: 0.5rem;
     }
 
-    /* Hero – mindre tekst */
+   
     .hero h1 {
         font-size: 5rem;
     }
 
-    /* Reise-bilder – stable loddrett */
+    
     .reise-bilder {
         flex-direction: column;
-        gap: 1rem;
+        align-items: center;
+        gap: 2rem;
     }
 
     .reise-bilder img {
@@ -351,56 +359,12 @@ footer{
         height: 250px;
     }
 
-    /* Anmeldelser – én kolonne */
+   
     .anmeldelse-grid {
         grid-template-columns: 1fr;
     }
-}
 
-
-@media (max-width: 600px) {
-
-    i.burger {
-        display: block !important;
-        color: black !important;
-        font-size: 1.5rem !important;
-        padding: 1rem !important;
-        cursor: pointer !important;
-    }
-
-   /*  .burger {
-        display: block;
-        font-size: 1.5rem;
-        padding: 1rem;
-        cursor: pointer;
-        color: black !important; 
-    } */
-
-    .kryss {
-        font-size: 1.5rem;
-        padding: 1rem;
-        cursor: pointer;
-        color: black !important; /* <-- legg til farge */
-        /* display: none er standard, JS styrer visningen */
-    }
-
-    .hero h1 {
-        font-size: 3rem;
-    }
-
-    .logo {
-        font-size: 1.5rem;
-    }
-    .reise-bilder {
-        gap: 2rem;        /* mer avstand mellom bildene */
-        flex-wrap: wrap;  /* gjør at bildene brytes til ny linje */
-        justify-content: center;
-    }
-
-    .reise-bilder img {
-        width: 200px;
-    }
-
+   
     .nyhetsbrev-form {
         flex-direction: column;
         align-items: center;
@@ -409,4 +373,17 @@ footer{
     .nyhetsbrev-form input {
         width: 100%;
     }
+
+    
+    .logo {
+        font-size: 1.5rem;
+    }
 }
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+}
+
+

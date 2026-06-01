@@ -16,7 +16,7 @@ kryss.addEventListener("click", () => {
 
 const toppKnapp = document.getElementById("topp-knapp");
 
-// Vis knappen når brukeren har scrollet 300px ned
+
 window.addEventListener("scroll", () => {
     if (window.scrollY > 300) {
         toppKnapp.classList.add("synlig");
@@ -25,7 +25,7 @@ window.addEventListener("scroll", () => {
     }
 });
 
-// Scroll til toppen når knappen klikkes
+
 toppKnapp.addEventListener("click", () => {
     window.scrollTo({
         top: 0,
@@ -34,14 +34,14 @@ toppKnapp.addEventListener("click", () => {
 });
 
 
-// Tekst til hver bloggpost
+
 const bloggInnhold = {
     "Paris på 3 dager": "Paris er en drømmeby! Start med Eiffeltårnet om morgenen, besøk Louvre på ettermiddagen og avslutt med en romantisk middag ved Seinen.",
     "Bali – mer enn bare strender": "Bali byr på så mye mer enn vakre strender. Besøk de hellige templene i Ubud og smak på autentisk balinsk mat.",
     "Mexico – mat og kultur": "Mexico er et land som aldri slutter å overraske. Fra fargerike markeder til imponerende aztekiske ruiner."
 };
 
-// Modal
+
 const modalBakgrunn = document.getElementById("modal-bakgrunn");
 const modalTittel = document.getElementById("modal-tittel");
 const modalTekst = document.getElementById("modal-tekst");

@@ -171,7 +171,7 @@ footer{
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .burger {
         display: block;
         font-size: 1.5rem;
@@ -208,13 +208,13 @@ footer{
         color: black;
     }
 
-    /* Galleri – én kolonne på mobil */
+    
     .galleri {
         grid-template-columns: 1fr;
         grid-auto-rows: 200px;
     }
 
-    /* Fjern span på mobil så alle bilder er like store */
+   
     .bilde-container.stor,
     .bilde-container.bredt {
         grid-row: span 1;
